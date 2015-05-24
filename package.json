@@ -1,0 +1,23 @@
+{
+  "name": "vk-lib",
+  "version": "1.0.0",
+  "description": "library for VK social network",
+  "main": "lib/vk-lib.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/snipter/vk-lib.git"
+  },
+  "keywords": [
+    "vk",
+    "social"
+  ],
+  "author": "Jaroslav Khorishchenko (websnipter@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snipter/vk-lib/issues"
+  },
+  "homepage": "https://github.com/snipter/vk-lib"
+}
