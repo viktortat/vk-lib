@@ -4,5 +4,7 @@ NodeJS module for VK API
 
 Functions:
 
-- Captcha processor
+- different Auth
+- setCaptchaHandler
+- getAll
 - Upload attachments
