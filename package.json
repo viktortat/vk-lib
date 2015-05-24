@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/snipter/vk-lib/issues"
   },
-  "homepage": "https://github.com/snipter/vk-lib"
+  "homepage": "https://github.com/snipter/vk-lib",
+  "dependencies": {
+    "request": "^2.55.0"
+  }
 }
