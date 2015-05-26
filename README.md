@@ -182,7 +182,6 @@ vk.groups.getMembers({group_id: 'kgtv.kremen', count: 'all'}, function(err, ids)
 
 ## TODO
 
-- Check authorization methods;
 - Upload attachments;
 
 ## Contacts
