@@ -4,7 +4,6 @@
 
 ## TODO
 
-- different Auth;
 - setCaptchaHandler;
 - getAll;
 - Upload attachments;
@@ -23,8 +22,6 @@ $ npm install vk-lib --save
 var VK = require('vk-lib');
 
 var vk = new VK();
-
-vk.setToken('%my_access_token%');
 ```
 
 ## Authorization
@@ -99,6 +96,31 @@ VK.serverAuth(opt, function(err, access_token_data){
 });
 ```
 
+## Setting access token
+
+You can set access token in three ways. At the initialization:
+
+```javascript
+var vk = new VK({access_token: "%my_access_token%"});
+```
+
+Using method:
+
+
+```javascript
+vk.setToken("%my_access_token%");
+```
+
+Direct in API's call:
+
+
+```javascript
+vk.users.get({uids: "snipter", access_token: "%my_access_token%"}, function(err, users_data){
+	if(err) throw new Error(err);
+	console.log(JSON.stringify(users_data));
+});
+```
+
 ## Calling methods
 
 With this module you can call VK api methods in two ways. First:
@@ -127,6 +149,5 @@ vk.apiReq("users.get", {uids: "snipter"}, function(err, users_data){
 
 ## Contacts
 
-Jaroslav Khorishchenko
-
+Jaroslav Khorishchenko<br/>
 websnipter@gmail.com
