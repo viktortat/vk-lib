@@ -1,6 +1,6 @@
 {
   "name": "vk-lib",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "library for VK social network",
   "main": "lib/vk-lib.js",
   "scripts": {
