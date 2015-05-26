@@ -2,11 +2,6 @@
 
 **vk-lib** is a nodejs module that provides easy access to the [VK API methods](https://vk.com/dev/methods) ([vk.com](vk.com)).
 
-## TODO
-
-- Upload attachments;
-- setCaptchaHandler;
-
 ## Installation
 
 Installation via npm:
@@ -161,6 +156,19 @@ vk.apiReq("users.get", {uids: "snipter"}, function(err, users_data){
 
 You can find full list of VK API methods [here](https://vk.com/dev/methods).
 
+## Captcha handler
+
+You can set captcha's handler function. This function will handle all [captcha errors](https://vk.com/dev/captcha_error) and module will repeat the same api request but with **captcha_key** param:
+
+```javascript
+vk.setCaptchaHandler(function(captcha_img_link, cb){
+	console.log(captcha_img_link);
+	// here is going magick where you enter
+	// code from captcha image
+	cb(code);
+});
+```
+
 ## Aditional methods
 
 Get all group members:
@@ -172,18 +180,10 @@ vk.groups.getMembers({group_id: 'kgtv.kremen', count: 'all'}, function(err, ids)
 })
 ```
 
-## Captcha handler
+## TODO
 
-You can set captcha's handler function. This function will handle all [captcha errors](https://vk.com/dev/captcha_error) and module will repeat the same api request but with **captcha_key** param:
-
-```javascript
-vk.setCaptchaHandler(function(captcha_img_link, cb){
-	console.log(captcha_img_link);
-	// here is going magick where you looking for
-	// captcha image and enter a code
-	cb(code);
-});
-```
+- Check authorization methods;
+- Upload attachments;
 
 ## Contacts
 
