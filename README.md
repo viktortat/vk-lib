@@ -4,7 +4,6 @@
 
 ## TODO
 
-- getAll;
 - Upload attachments;
 - setCaptchaHandler;
 
@@ -174,6 +173,17 @@ vk.groups.getMembers({group_id: 'kgtv.kremen', count: 'all'}, function(err, ids)
 ```
 
 ## Captcha handler
+
+You can set captcha's handler function. This function will handle all [captcha errors](https://vk.com/dev/captcha_error) and module will repeat the same api request but with **captcha_key** param:
+
+```javascript
+vk.setCaptchaHandler(function(captcha_img_link, cb){
+	console.log(captcha_img_link);
+	// here is going magick where you looking for
+	// captcha image and enter a code
+	cb(code);
+});
+```
 
 ## Contacts
 
