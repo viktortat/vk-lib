@@ -4,9 +4,9 @@
 
 ## TODO
 
-- setCaptchaHandler;
 - getAll;
 - Upload attachments;
+- setCaptchaHandler;
 
 ## Installation
 
@@ -123,7 +123,7 @@ vk.users.get({uids: "snipter", access_token: "%my_access_token%"}, function(err,
 
 ## Calling methods
 
-With this module you can call VK api methods in two ways. First:
+With this module you can call [VK API methods](https://vk.com/dev/methods) in two ways. First:
 
 ```javascript
 var vk = new VK();
@@ -144,6 +144,8 @@ vk.apiReq("users.get", {uids: "snipter"}, function(err, users_data){
 	console.log(JSON.stringify(users_data));
 });
 ```
+
+You can find full list of VK API methods [here](https://vk.com/dev/methods).
 
 ## Captcha handler
 
