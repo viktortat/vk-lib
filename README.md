@@ -1,6 +1,6 @@
-# NodeJS modue for VK.com (vkontakte.ru)
+# NodeJS modue for VK API ([vk.com](vk.com))
 
-**vk-lib** is a nodejs module that provides easy access to the VK API
+**vk-lib** is a nodejs module that provides easy access to the [VK API methods](https://vk.com/dev/methods).
 
 ## TODO
 
