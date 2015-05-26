@@ -121,6 +121,21 @@ vk.users.get({uids: "snipter", access_token: "%my_access_token%"}, function(err,
 });
 ```
 
+You can also check acces token (using [secure.checkToken](https://vk.com/dev/secure.checkToken) method):
+
+```javascript
+var opt = {
+	client_id: '%app_id%', 
+	client_secret:'%app_secret%', 
+	access_token: '%access_token%'
+}
+
+VK.checkToken(opt, function(err, check_result){
+	if(err) throw new Error(err);
+	console.log(JSON.stringify(check_result));
+});
+```
+
 ## Calling methods
 
 With this module you can call [VK API methods](https://vk.com/dev/methods) in two ways. First:
