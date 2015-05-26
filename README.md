@@ -147,6 +147,17 @@ vk.apiReq("users.get", {uids: "snipter"}, function(err, users_data){
 
 You can find full list of VK API methods [here](https://vk.com/dev/methods).
 
+## Aditional methods
+
+Get all group members:
+
+```javascript
+vk.groups.getMembers({group_id: 'kgtv.kremen', count: 'all'}, function(err, ids){
+	if(err) throw new Error(err);
+	console.log(JSON.stringify(ids));
+})
+```
+
 ## Captcha handler
 
 ## Contacts
