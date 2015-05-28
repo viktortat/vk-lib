@@ -182,7 +182,7 @@ vk.groups.getMembers({group_id: 'kgtv.kremen', count: 'all'}, function(err, ids)
 
 ## TODO
 
-- Upload attachments;
+- Smart attachmets upload;
 
 ## Contacts
 
