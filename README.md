@@ -182,6 +182,7 @@ vk.groups.getMembers({group_id: 'kgtv.kremen', count: 'all'}, function(err, ids)
 
 ## TODO
 
+- Process request timeout;
 - Smart attachmets upload;
 
 ## Contacts
